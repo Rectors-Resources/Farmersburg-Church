@@ -2,7 +2,7 @@ import "./sermons.css";
 
 export default function Sermons() {
   return (
-    <div>
+    <section>
       <h2 className="top-text">
         Sermons are held every sunday at 10:00 A.M. by pastor John Turner.
       </h2>
@@ -67,6 +67,6 @@ export default function Sermons() {
         </a>
         .
       </p>
-    </div>
+    </section>
   );
 }

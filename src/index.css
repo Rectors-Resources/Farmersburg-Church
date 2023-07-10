@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --color-main: #9CEBFA;
+  --color-main-hue-one: #9CEBFAbb;
   --color-white: #a2a2b3;
   --color-red: #E0FFFF;
   --color-black: #503050;
 }
 
-* {
+*, *::before, *::after{
   font-family: Poppins, Courier, monospace;
   margin: 0;
   padding: 0;
-  color: var(--color-black)
+  color: var(--color-black);
+  box-sizing: border-box;
 }
 html {
   background: linear-gradient(90deg, var(--color-main), var(--color-white));

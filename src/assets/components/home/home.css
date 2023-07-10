@@ -4,7 +4,7 @@
   background-position: 50%;
   background-size: cover;
   min-height: 25rem;
-  margin: auto 2rem ;
+  margin: auto 1rem;
   color: var(--color-white);
   padding: 1rem;
 }
@@ -12,11 +12,11 @@
   text-align: center;
   margin: auto;
   margin-top: 12rem;
-  background-color: var(--color-red);
+  padding: 1rem;
+  background-color: var(--color-white);
   box-shadow: 0.2rem 0.2rem var(--color-white);
-  max-width: 90%;
+  max-width: 70%;
   border-radius: 0.5rem;
-  
 }
 .about {
   border: 2px solid var(--color-black);
@@ -31,14 +31,14 @@
   padding: 0.1rem 1rem;
 }
 .img-container {
-    margin: 1rem auto;
-    text-align: center;
-    padding: 1rem;
-    border: 2px solid var(--color-black);
-    width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid var(--color-black);
+  width: 90%;
 }
 @media screen and (max-width: 400px) {
-    .banner h1 {
-        width: 90%
-    }
+  .banner h1 {
+    width: 90%;
+  }
 }

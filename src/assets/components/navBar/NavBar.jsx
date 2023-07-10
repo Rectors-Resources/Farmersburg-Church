@@ -3,7 +3,7 @@ import "./navbar.css";
 
 export default function NavBar() {
   return (
-    <div className="navdiv">
+    <nav className="navdiv">
       <Link to="/" className="link">
         Home
       </Link>
@@ -16,6 +16,6 @@ export default function NavBar() {
       <Link to="contact" className="link">
         Contact Us
       </Link>
-    </div>
+    </nav>
   );
 }
