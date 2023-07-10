@@ -45,6 +45,8 @@
 }
 .about-text {
   font-size: 1rem;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 
