@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --main-color-one: #6EF5ED;
+  --color-white: #faf8e6;
+  --color-red: #C24944;
+  --color-salmon: #F6BAAC;
+}
+
+* {
+  font-family: Poppins, Courier, monospace;
+  margin: 0;
+  padding: 0;
+  color: var(--color-white)
+}
+html {
+  background-image: linear-gradient(90deg, #F6BAAC, #C24944, #6EF5ED);
+}

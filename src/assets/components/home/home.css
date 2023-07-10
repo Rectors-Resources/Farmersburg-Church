@@ -1,0 +1,41 @@
+.banner {
+  background-image: url("https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/73375467_2533455663376383_3020716250931134464_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_ohc=D0PUraRpzGcAX_LoAeu&_nc_ht=scontent-ord5-1.xx&oh=00_AfB1krSWCYe4BZl5ebx5_XdU2LSPosOvnizpoLjh9mQGGA&oe=64D14FF5");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  min-height: 25rem;
+  margin: auto;
+  color: var(--color-white);
+  padding: 1rem;
+}
+.banner h1 {
+  text-align: center;
+  margin: auto;
+  margin-top: 14rem;
+  background-color: #00090977;
+  width: 30%;
+}
+.about {
+  border: 2px solid black;
+  margin: 1.5rem auto;
+  text-align: center;
+  padding: 1rem;
+  width: 90%;
+}
+
+.communityimg {
+  max-height: 20rem;
+  padding: 0.1rem 1rem;
+}
+.img-container {
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid black;
+    width: 90%;
+}
+@media screen and (max-width: 400px) {
+    .banner h1 {
+        width: 90%
+    }
+}
