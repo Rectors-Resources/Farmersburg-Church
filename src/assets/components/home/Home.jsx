@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <div className="banner">
-        <h1 className="welcome">Welcome to First Presbyterian Church of Farmersburg.</h1>
+        <h1 className="welcome">Welcome to the First Presbyterian Church of Farmersburg.</h1>
       </div>
       <article className='img-container'>
         <h2 className="event-thang">

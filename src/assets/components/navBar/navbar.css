@@ -9,9 +9,9 @@
   text-align: center;
   background-color: var(--color-red);
   box-shadow: 3px 3px var(--color-red);
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
   border-radius: 0.5rem;
-  width: 20%;
+  max-width: 25%;
 }
 
 @media screen and (max-width: 480px) {

@@ -5,7 +5,7 @@ form {
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
 }
 form * {
   margin: 0.6em;
@@ -19,7 +19,6 @@ input {
   height: 10%;
 }
 textarea {
-  color: black;
   height: 100%;
   width: 90%;
 }
@@ -29,9 +28,9 @@ label {
 }
 
 button {
-  color: black;
   padding: 1em;
   grid-column: 2;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
