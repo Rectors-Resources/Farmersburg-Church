@@ -12,9 +12,10 @@
   text-align: center;
   margin: auto;
   margin-top: 14rem;
-  background-color: #C2494466;
-  box-shadow: 0.2rem 0.2rem var(--color-red);
-  width: 30%;
+  background-color: var(--color-red);
+  box-shadow: 0.2rem 0.2rem var(--color-white);
+  width: 40%;
+  border-radius: 0.5rem;
 }
 .about {
   border: 2px solid black;

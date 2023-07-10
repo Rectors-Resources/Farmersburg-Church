@@ -31,8 +31,8 @@ export default function Home() {
       <article className="about">
         <h2>About Us:</h2>
         <p>
-          We are a Presbyterian denominated church located in Farmersburg,
-          Indiana. Sermons are held every sunday by pastor John Turner and/or
+          We are a Presbyterian denominated church founded in Farmersburg,
+          Indiana in 1924. Sermons are held every sunday by pastor John Turner and/or
           any guest speakers. We are open for wedding services and hosting of
           parties. If you have any questions or would like to reserve a service
           feel free to contact us from our{" "}
