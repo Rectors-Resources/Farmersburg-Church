@@ -12,7 +12,8 @@
   text-align: center;
   margin: auto;
   margin-top: 14rem;
-  background-color: #00090977;
+  background-color: #C2494466;
+  box-shadow: 0.2rem 0.2rem var(--color-red);
   width: 30%;
 }
 .about {
