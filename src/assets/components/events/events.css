@@ -4,6 +4,7 @@ table {
   margin: 1rem auto;
   border: 2px solid var(--color-black);
   border-collapse: collapse;
+  max-width: 80%;
 }
 table * {
   padding: 0.5rem;
@@ -15,5 +16,8 @@ div h3 {
 }
 
 .colored {
-  background-color: var(--color-red);
+  background: var(--color-main);
+}
+.even {
+  background: var(--color-white);
 }

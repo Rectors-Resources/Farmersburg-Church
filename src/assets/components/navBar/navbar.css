@@ -7,8 +7,7 @@
   padding: 1em;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--color-red);
-  box-shadow: 3px 3px var(--color-red);
+  background: linear-gradient(270deg, var(--color-main), var(--color-white));
   border: 2px solid var(--color-black);
   border-radius: 0.5rem;
   max-width: 25%;

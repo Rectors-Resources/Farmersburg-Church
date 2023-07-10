@@ -3,11 +3,35 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <div className="banner">
-        <h1 className="welcome">Welcome to the First Presbyterian Church of Farmersburg.</h1>
+        <h1 className="welcome">
+          Welcome to the First Presbyterian Church of Farmersburg.
+        </h1>
       </div>
-      <article className='img-container'>
+      <article className="about">
+        <div className="inner-about">
+
+          <h2>About Us:</h2>
+          <img
+          src="https://scontent-ord5-2.xx.fbcdn.net/v/t1.6435-9/168600681_1083453925473682_4641447102861650148_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=b9115d&_nc_ohc=a6OaTxmngWMAX_UNtO0&_nc_ht=scontent-ord5-2.xx&oh=00_AfDVye8w7r79EZtFLtVGr_b_7lTWrl_MHUPRxaDjjPD7qg&oe=64D3E80D"
+          alt="stained glass angel"
+          className="about-img"
+        />
+
+          <p className="about-text">
+            We are a Presbyterian denominated church founded in Farmersburg,
+            Indiana in 1924. Sermons are held every sunday by pastor John Turner
+            and/or any guest speakers. We are open for wedding services and
+            hosting of parties. If you have any questions or would like to
+            reserve a service feel free to contact us from our{" "}
+            <Link to="contact">contact page</Link>.
+          </p>
+        </div>
+        
+      </article>
+
+      <article className="community-container">
         <h2 className="event-thang">
           Join our community and enjoy splendid events fun for the whole family
         </h2>
@@ -26,17 +50,8 @@ export default function Home() {
           alt="church members eating"
           className="communityimg"
         />
-        <p>See our upcoming events <Link to='upcoming-events'>here</Link>.</p>
-      </article>
-      <article className="about">
-        <h2>About Us:</h2>
         <p>
-          We are a Presbyterian denominated church founded in Farmersburg,
-          Indiana in 1924. Sermons are held every sunday by pastor John Turner and/or
-          any guest speakers. We are open for wedding services and hosting of
-          parties. If you have any questions or would like to reserve a service
-          feel free to contact us from our{" "}
-          <Link to="contact">contact page</Link>.
+          See our upcoming events <Link to="upcoming-events">here</Link>.
         </p>
       </article>
     </div>

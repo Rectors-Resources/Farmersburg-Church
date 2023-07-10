@@ -1,3 +1,9 @@
+.home-page {
+  display: grid;
+}
+
+
+
 .banner {
   background-image: url("https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/73375467_2533455663376383_3020716250931134464_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_ohc=D0PUraRpzGcAX_LoAeu&_nc_ht=scontent-ord5-1.xx&oh=00_AfB1krSWCYe4BZl5ebx5_XdU2LSPosOvnizpoLjh9mQGGA&oe=64D14FF5");
   background-repeat: no-repeat;
@@ -12,33 +18,60 @@
   text-align: center;
   margin: auto;
   margin-top: 12rem;
-  padding: 1rem;
+  padding: 0.55rem;
   background: linear-gradient(270deg, var(--color-main), var(--color-white));
-  box-shadow: 0.2rem 0.2rem var(--color-white);
   max-width: 70%;
+  box-shadow: 0.2rem 0.2rem var(--color-white);
   border-radius: 0.5rem;
 }
 .about {
   border: 2px solid var(--color-black);
   margin: 1.5rem auto;
-  text-align: center;
+  font-size: 1.5em;
   padding: 1rem;
   width: 90%;
 }
+.inner-about {
+  padding: 2rem;
+}
+.about h2 {
+  text-align: center;
+}
+
+.about-img {
+  max-width: 10rem;
+  margin: 0.55rem;
+  float: left;
+}
+.about-text {
+  font-size: 1rem;
+}
+
+
 
 .communityimg {
   max-height: 20rem;
   padding: 0.1rem 1rem;
 }
-.img-container {
+.community-container {
   margin: 1rem auto;
   text-align: center;
   padding: 1rem;
   border: 2px solid var(--color-black);
   width: 90%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .banner h1 {
-    width: 90%;
+    font-size: 1rem;
+
   }
+  .about-img {
+    width: 8rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .about-text {
+    font-size: 2rem;
+  }
+
 }

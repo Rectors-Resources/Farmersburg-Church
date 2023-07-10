@@ -13,7 +13,7 @@ export default function Events() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr className="even">
             <td>5/6</td>
             <td>Easter Dinner</td>
             <td>5 P.M.</td>
@@ -25,7 +25,7 @@ export default function Events() {
             <td>7 P.M.</td>
             <td>Remember to wear reflective clothing</td>
           </tr>
-          <tr>
+          <tr className="even">
             <td>12/2</td>
             <td>Christmas Dinner</td>
             <td>5 P.M.</td>
@@ -37,7 +37,7 @@ export default function Events() {
             <td>7 P.M.</td>
             <td>Remember to wear reflective clothing</td>
           </tr>
-          <tr>
+          <tr className="even">
             <td>8/27</td>
             <td>Halloween Trunk or treat</td>
             <td>7 P.M.</td>
