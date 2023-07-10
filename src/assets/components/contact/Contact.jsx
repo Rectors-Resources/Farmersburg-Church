@@ -8,19 +8,20 @@ export default function Contact() {
         alert("Form Submitted!");
       }}
     >
-      <label for="first-name">First-Name: </label>
-      <input type="text" id="first-name" required />
-      <br />
-      <label for="last-name">Last-Name: </label>
-      <input type="text" id="last-name" required />
-      <br />
-      <label for="email">E-Mail: </label>
-      <input type="text" id="email" />
-      <br />
-      <h2 id="commenty">Comment:</h2>
-      <textarea name="comment" id="" cols='50' rows="20" required></textarea>
-      <br />
-
+      <div>
+        <input type="text" id="first-name" placeholder="First-Name" required />
+        <br />
+        <input type="text" id="last-name" placeholder="Last-Name" required />
+        <br />
+        <input type="text" id="email" placeholder="E-Mail" />
+      </div>
+      <div>
+        <textarea
+          name="comment"
+          placeholder="Submit this form with any questions or requests."
+          required
+        ></textarea>
+      </div>
       <button type="submit">Submit</button>
     </form>
   );

@@ -1,29 +1,44 @@
 form {
-    margin: auto;
-    padding: 1rem;
-    text-align: center;
-    border: 2px solid black;
-    width: 90%;
-  }
-  form * {
-    margin: 0.6em;
-    
-    
-  }
-  input {
-    color: black;
-  }
-  textarea {
-    color: black;
-  }
-  label {
-    font-size: 1.5em;
-  }
+  margin: 4em auto;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+}
+form * {
+  margin: 0.6em;
+  border-radius: 0.5rem;
+}
+input {
+  color: black;
+  margin: 2rem 0;
+  width: 90%;
+  height: 10%;
+}
+textarea {
+  color: black;
+  height: 100%;
+  width: 90%;
+}
+label {
+  font-size: 1.5em;
+}
 #commenty {
-    font-size: 2em;
+  font-size: 2em;
 }
 button {
-    color: black;
-    padding: 1em;
+  color: black;
+  padding: 1em;
+  grid-column: 2;
 }
 
+@media screen and (max-width: 480px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  button {
+    grid-column: 1;
+  }
+}
