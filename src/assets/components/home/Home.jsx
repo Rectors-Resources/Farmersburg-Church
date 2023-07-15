@@ -48,7 +48,7 @@ export default function Home() {
               alt="church members playing corn hole"
               className="communityimg"
             />
-            <p>Great food made by our community.</p>
+            <p>Great food made by our members.</p>
           </div>
           <div className="img-txt-container">
             <img

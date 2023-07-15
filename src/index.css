@@ -10,6 +10,9 @@
     var(--color-main),
     var(--color-white)
   );
+  --color-advanced-gradient: var(--color-reverse-gradient),
+    linear-gradient(90deg, var(--color-red), var(--color-white)),
+    linear-gradient(45deg, var(--color-main), var(--color-main-hue-one));
 }
 
 body {
@@ -27,5 +30,6 @@ body {
   box-sizing: border-box;
 }
 html {
-  background: linear-gradient(90deg, var(--color-main), var(--color-white));
+  background: linear-gradient(90deg, var(--color-main), var(--color-white)),
+  linear-gradient(270deg, var(--color-red), var(--color-white));
 }
