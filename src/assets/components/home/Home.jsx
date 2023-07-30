@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className="img-txt-container">
             <img
-              src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/216970678_1145106522641755_7913531573496355924_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=b9115d&_nc_ohc=tmB8q4upGy0AX_NVAqT&_nc_ht=scontent-ord5-2.xx&oh=00_AfCCvia7BWj2laeWqPIQ-X_ECaDeh24rbr1CvmwaoCVn2Q&oe=64AFB37B"
+              src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/216970678_1145106522641755_7913531573496355924_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=b9115d&_nc_ohc=ZmaJy8BO4JgAX91mdSA&_nc_ht=scontent-atl3-1.xx&oh=00_AfCnkfyRORA8V8zFrwPS_ZLBWyt5Eabyf8zf7jEInGIhvA&oe=64CB62FB"
               alt="church members playing corn hole"
               className="communityimg"
             />

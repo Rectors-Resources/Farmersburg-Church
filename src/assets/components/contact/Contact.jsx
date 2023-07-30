@@ -7,6 +7,8 @@ export default function Contact() {
         e.preventDefault();
         alert("Form Submitted!");
       }}
+      name="contact"
+      data-netlify='true'
     >
       <div>
         <label htmlFor="first-name">First-Name:</label>
