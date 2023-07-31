@@ -4,21 +4,20 @@ export default function Contact() {
   return (
     <form
       onSubmit={(e) => {
+        e.preventDefault()
         alert("Form Submitted!");
       }}
       name="contact"
-      data-netlify='true'
-      netlify
     >
       <div>
         <label htmlFor="first-name">First-Name:</label>
-        <input type="text" id="first-name" placeholder="First-Name" required />
+        <input type="text" name='first-name' id="first-name" placeholder="First-Name" required />
         <br />
         <label htmlFor="last-name">Last-Name:</label>
-        <input type="text" id="last-name" placeholder="Last-Name" required />
+        <input type="text" id="last-name" name="last-name" placeholder="Last-Name" required />
         <br />
         <label htmlFor="email">Email:</label>
-        <input type="text" id="email" placeholder="E-Mail" />
+        <input type="text" id="email" placeholder="E-Mail" name="email"/>
       </div>
       <div>
         <textarea
