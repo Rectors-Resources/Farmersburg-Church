@@ -9,6 +9,7 @@ export default function Contact() {
       }}
       name="contact"
       data-netlify='true'
+      netlify
     >
       <div>
         <label htmlFor="first-name">First-Name:</label>
