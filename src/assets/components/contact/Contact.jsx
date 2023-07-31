@@ -1,52 +1,76 @@
+import { useState } from "react";
 import "./contact.css";
+import axios from "axios";
 
 export default function Contact() {
-  const handleSubmit = (event) => {
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    comment: ''
+  })
+  const handleOnChange = (event) => {
+    event.persist();
+    setFormData((prev) => ({
+      ...prev,
+      [event.target.id]: event.target.value,
+    }));
+  };
+  const handleOnSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData)
+    axios({
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      url: "https://formbold.com/s/obqvk",
+      data: formData,
     })
-      .catch((error) => alert(error));
+      .then((r) => {
+        console.log("hello");
+      })
+      .catch((r) => {
+        console.log(r);
+      });
   };
 
+
   return (
-    <form onSubmit={handleSubmit} name="contact">
+    <form onSubmit={handleOnSubmit} name="contact">
       <input type="hidden" name="contact" value="contact" />
       <div>
-        <label htmlFor="first-name">First-Name:</label>
+        <label htmlFor="firstName">First-Name:</label>
         <input
           type="text"
-          name="first-name"
-          id="first-name"
+          name="firstName"
+          id="firstName"
           placeholder="First-Name"
+          onChange={handleOnChange}
           required
         />
         <br />
         <label htmlFor="last-name">Last-Name:</label>
         <input
           type="text"
-          id="last-name"
+          id="lastName"
           name="last-name"
           placeholder="Last-Name"
+          onChange={handleOnChange}
           required
         />
         <br />
         <label htmlFor="email">Email:</label>
-        <input type="text" id="email" placeholder="E-Mail" name="email" />
+        <input type="text" id="email" onChange={handleOnChange} placeholder="E-Mail" name="email" />
       </div>
       <div>
         <textarea
           name="comment"
+          id="comment"
           placeholder="Submit this form with any questions or requests."
+          onChange={handleOnChange}
           required
         ></textarea>
       </div>
       <button type="submit">Submit</button>
     </form>
+    
   );
 }
