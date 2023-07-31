@@ -5,10 +5,11 @@ export default function Contact() {
     <form
       onSubmit={(e) => {
         e.preventDefault()
-        alert("Form Submitted!");
       }}
+      method="post"
       name="contact"
     >
+      <input type="hidden" name="contact" value='contact' />
       <div>
         <label htmlFor="first-name">First-Name:</label>
         <input type="text" name='first-name' id="first-name" placeholder="First-Name" required />
