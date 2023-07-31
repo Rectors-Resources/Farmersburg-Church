@@ -4,11 +4,11 @@ import axios from "axios";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    comment: ''
-  })
+    firstName: "",
+    lastName: "",
+    email: "",
+    comment: "",
+  });
   const handleOnChange = (event) => {
     event.persist();
     setFormData((prev) => ({
@@ -18,7 +18,7 @@ export default function Contact() {
   };
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    console.log(formData)
+    console.log(formData);
     axios({
       method: "POST",
       url: "https://formbold.com/s/obqvk",
@@ -32,38 +32,40 @@ export default function Contact() {
       });
   };
 
-
   return (
     <form onSubmit={handleOnSubmit} name="contact">
-      <input type="hidden" name="contact" value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
       <div>
         <label htmlFor="firstName">First-Name:</label>
         <input
           type="text"
           name="firstName"
-          id="firstName"
           placeholder="First-Name"
           onChange={handleOnChange}
           required
         />
         <br />
-        <label htmlFor="last-name">Last-Name:</label>
+        <label htmlFor="lastName">Last-Name:</label>
         <input
           type="text"
-          id="lastName"
-          name="last-name"
+          name="lastName"
           placeholder="Last-Name"
           onChange={handleOnChange}
           required
         />
         <br />
         <label htmlFor="email">Email:</label>
-        <input type="text" id="email" onChange={handleOnChange} placeholder="E-Mail" name="email" />
+        <input
+          type="text"
+          id="email"
+          onChange={handleOnChange}
+          placeholder="E-Mail"
+          name="email"
+        />
       </div>
       <div>
         <textarea
           name="comment"
-          id="comment"
           placeholder="Submit this form with any questions or requests."
           onChange={handleOnChange}
           required
@@ -71,6 +73,5 @@ export default function Contact() {
       </div>
       <button type="submit">Submit</button>
     </form>
-    
   );
 }
