@@ -5,7 +5,7 @@ import "./index.css";
 
 import App from "./App.jsx";
 import Contact from "./assets/components/contact/Contact.jsx";
-import Home from "./assets/components/home/home.jsx";
+import Home from "./assets/components/home/Home.jsx";
 import Sermons from "./assets/components/sermons/sermons.jsx";
 import Events from "./assets/components/events/Events.jsx";
 
