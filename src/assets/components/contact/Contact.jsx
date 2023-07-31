@@ -21,7 +21,7 @@ export default function Contact() {
   }
 
   return (
-    <form name="contact">
+    <form name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
       <div>
         <label htmlFor="firstName">First-Name:</label>
