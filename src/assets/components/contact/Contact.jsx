@@ -16,24 +16,12 @@ export default function Contact() {
       [event.target.id]: event.target.value,
     }));
   };
-  const handleOnSubmit = (event) => {
-    event.preventDefault();
-    console.log(formData);
-    axios({
-      method: "POST",
-      url: "https://formbold.com/s/obqvk",
-      data: formData,
-    })
-      .then((r) => {
-        console.log("hello");
-      })
-      .catch((r) => {
-        console.log(r);
-      });
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
 
   return (
-    <form onSubmit={handleOnSubmit} name="contact">
+    <form name="contact">
       <input type="hidden" name="form-name" value="contact" />
       <div>
         <label htmlFor="firstName">First-Name:</label>
