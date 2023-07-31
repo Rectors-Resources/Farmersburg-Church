@@ -4,7 +4,6 @@ export default function Contact() {
   return (
     <form
       onSubmit={(e) => {
-        e.preventDefault();
         alert("Form Submitted!");
       }}
       name="contact"
